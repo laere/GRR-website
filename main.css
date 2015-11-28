@@ -1,0 +1,188 @@
+/* BASIC ***************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {}
+a:visited {}
+a:hover {}
+
+.col img {
+  box-shadow: 0 5px 10px black;
+}
+
+.size {
+  height: 300px;
+  width: 500px;
+}
+
+.t-border {
+  border-top: 1px solid lightgrey;
+}
+
+
+
+/* HEADER ***************************************************************/
+
+.header {
+  background-image: linear-gradient(to top, #fff, transparent 50%),
+                    url(http://thumbs.imagekind.com/3757346_650/Downtown-Grand-Rapids_art.jpg?v=1390546800);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 850px;
+  padding: 20px 0;
+  color: white;
+}
+
+#logo {
+  font-family: 'Lobster Two';
+  font-size: 3em;
+  text-shadow: 10px 10px 10px black;
+
+}
+
+.title {
+  font-size: 1em;
+  text-shadow: 10px 10px 10px black;
+ 
+}
+
+/* FOOTER ***************************************************************/
+
+footer {
+  clear: both;
+  font-family: 'Monospace', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  font-size: .9em;
+}
+
+/* MAIN CONTENT ***************************************************************/
+
+.primary-content,
+.secondary-content {
+  width: 60%;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.primary-content p {
+  text-align: center;
+  font-size: 1.25em;
+  padding-top: 20px;
+}
+
+.secondary-content {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.museum {
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 10px 10px 10px black;
+  margin: 60px 140px;
+  padding: 16% 20%;
+  box-shadow: 0 5px 10px #222;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/32/10/67/321067940bec620493256fa351e555bf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.museum p {
+  font-size: 1.25em;
+}
+
+
+/* COLUMNS ***************************************************************/
+
+.arena,
+.brewery {
+  width: 40%;
+}
+
+.arena {
+  float: left;
+}
+
+.brewery {
+  float: right;
+}
+
+/* MEDIA QUERIES ***************************************************************/
+
+
+@media (max-width: 768px) {
+  .col {
+    clear: both;
+    max-width: 100%;
+  }
+  .museum {
+    padding: 100px 0;
+    margin: 60px 0;
+    width: 100%;
+  }
+  .museum p {
+    padding: 0 10px;
+  }
+  .primary-content {
+    padding: 20px 10px;
+  }
+  footer {
+    max-width: 100%;
+  }
+}
+
+
+/* CLEARFIX ***************************************************************/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
