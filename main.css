@@ -41,7 +41,7 @@ a:hover {}
 
 .size {
   height: 300px;
-  width: 500px;
+  max-width: 100%;
 }
 
 .t-border {
@@ -77,6 +77,8 @@ a:hover {}
  
 }
 
+
+
 /* FOOTER ***************************************************************/
 
 footer {
@@ -86,6 +88,9 @@ footer {
   padding-top: 30px;
   font-size: .9em;
 }
+
+
+
 
 /* MAIN CONTENT ***************************************************************/
 
@@ -107,6 +112,7 @@ footer {
   padding-top: 40px;
   padding-bottom: 60px;
   border-bottom: 1px solid lightgrey;
+  overflow: auto;
 
 }
 
@@ -129,6 +135,8 @@ footer {
 }
 
 
+
+
 /* COLUMNS ***************************************************************/
 
 .arena,
@@ -144,38 +152,72 @@ footer {
   float: right;
 }
 
+
+
+
+
 /* MEDIA QUERIES ***************************************************************/
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+}
 
 
 @media (max-width: 768px) {
-  .col {
-    clear: both;
-    max-width: 100%;
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border: none;
+  }
+  .header {
+    max-height: 400px;
+  }
+  #logo {
+    font-size: 1.5em;
+  }
+  .title {
+    font-size: .9em;
   }
   .museum {
-    padding: 100px 0;
-    margin: 60px 0;
-    width: 100%;
+    padding: 10% 12%;
+    margin: 50px 0 20px;
   }
   .museum p {
-    padding: 0 10px;
+    font-weight: bold;
   }
-  .primary-content {
-    padding: 20px 10px;
+  h3 {
+    font-size: 1.75em;
+  }
+  .primary-content p {
+    font-size: 1em;
+  }
+  .arena,
+  .brewery {
+    float: none;
+    width: 100%;
   }
   footer {
-    max-width: 100%;
+    border-top: 1px solid lightgrey;
   }
 }
+
+
+
 
 
 /* CLEARFIX ***************************************************************/
 
-.group:after {
+.group {
   content: "";
   display: table;
   clear: both;
 }
+
+
+
 
 
 
